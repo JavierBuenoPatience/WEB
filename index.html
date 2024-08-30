@@ -8,43 +8,106 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header class="header">
     <a href="#" class="logo">
-      <img src="/placeholder.svg" alt="Patience Logo" width="32" height="32" class="mr-2">
+      <img src="/placeholder.svg" alt="Patience Logo" class="logo-img">
       <span>Patience</span>
     </a>
-    <nav>
+    <nav class="nav">
       <a href="#">Funcionalidades</a>
       <a href="#">Testimonios</a>
       <a href="#">Contacto</a>
-      <a href="#" class="button-class">Inicio de sesión</a>
+      <a href="#" class="btn-primary">Inicio de sesión</a>
     </nav>
   </header>
-  <main>
+  <main class="main-content">
     <section class="hero">
       <div class="container">
         <div class="content">
           <h1>Prepárate para tu oposición con Patience</h1>
           <p>Apóyate en la primera plataforma 360 centrada en ayudarte a hacerte más llevadero el camino hasta tu plaza!</p>
           <div class="cta-buttons">
-            <a href="#" class="button-class">¡Solicita información!</a>
-            <a href="#" class="button-outline">Regístrate ahora</a>
+            <a href="#" class="btn-primary">¡Solicita información!</a>
+            <a href="#" class="btn-outline">Regístrate ahora</a>
           </div>
         </div>
       </div>
     </section>
-    <!-- Otras secciones -->
+
+    <!-- Sección de funcionalidades -->
+    <section id="features" class="features">
+      <div class="container text-center">
+        <h2>Cada apoyo cuenta, ¡únete!</h2>
+        <p>Nuestro servicio SaaS te brinda herramientas y recursos exclusivos para que puedas preparar tu oposición de manera eficiente y efectiva.</p>
+        <div class="features-list">
+          <div class="feature">
+            <h3>Grupos de Estudio</h3>
+            <p>Únete a grupos de estudio para aprender de manera colaborativa y compartir conocimientos con otros opositores.</p>
+            <a href="#" class="btn-primary">Más información</a>
+          </div>
+          <div class="feature">
+            <h3>IA experta en tu especialidad</h3>
+            <p>Accede a contenidos y recursos generados por una inteligencia artificial especializada en tu área de oposición.</p>
+            <a href="#" class="btn-primary">Más información</a>
+          </div>
+          <div class="feature">
+            <h3>Últimas noticias</h3>
+            <p>Mantente informado sobre las últimas novedades de tu proceso de oposición.</p>
+            <a href="#" class="btn-primary">Más información</a>
+          </div>
+          <div class="feature">
+            <h3>Comunicación con tu academia</h3>
+            <p>Comunícate en tiempo real con tu tutor, accede a clases grabadas, temario actualizado y mucho más.</p>
+            <a href="#" class="btn-primary">Próximamente...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonials" class="testimonials">
+      <div class="container grid">
+        <div class="testimonial">
+          <h2>Testimonios de usuarios satisfechos con Patience</h2>
+          <p>Escucha lo que dicen los opositores que han utilizado nuestro servicio para preparar sus exámenes.</p>
+        </div>
+        <div class="testimonial-cards">
+          <blockquote class="testimonial-card">
+            &ldquo;Gracias a la planificación y los recursos de Patience, pude organizar mi tiempo de estudio de manera eficiente y enfocarme en lo más importante. ¡Conseguí mi plaza!&rdquo;
+            <footer>María Gómez, Maestra de Primaria</footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            &ldquo;El apoyo personalizado de los tutores de Patience fue clave para superar mis dudas y sentirme más seguro durante el proceso de oposición. ¡Recomiendo este servicio a todos los opositores!&rdquo;
+            <footer>Juan Pérez, Oficial de Policía</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="contact">
+      <div class="container text-center">
+        <h2>Solicita más información o inscríbete en Patience</h2>
+        <p>Completa el formulario a continuación y nos pondremos en contacto contigo a la brevedad.</p>
+        <form class="contact-form">
+          <input type="text" placeholder="Nombre" class="input-field">
+          <input type="email" placeholder="Correo electrónico" class="input-field">
+          <textarea placeholder="Mensaje" rows="3" class="input-field"></textarea>
+          <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+        <p class="terms">
+          Al enviar este formulario, aceptas nuestros <a href="#" class="link">Términos y Condiciones</a>.
+        </p>
+      </div>
+    </section>
   </main>
-  <footer>
+  <footer class="footer">
     <p>&copy; 2024 Patience. Todos los derechos reservados.</p>
     <nav>
-      <a href="#">Política de Privacidad</a>
-      <a href="#">Aviso Legal</a>
+      <a href="#" class="link">Política de Privacidad</a>
+      <a href="#" class="link">Aviso Legal</a>
     </nav>
   </footer>
   <script src="script.js"></script>
-</body>
-</html>
-
 </body>
 </html>
