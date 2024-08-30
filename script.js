@@ -1,7 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.querySelector('.contact-form');
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    alert('Formulario enviado');
+function showSection(sectionId) {
+  // Ocultar todas las secciones
+  document.querySelectorAll('section').forEach(section => {
+    section.style.display = 'none';
   });
+
+  // Mostrar la sección seleccionada
+  document.getElementById(sectionId).style.display = 'block';
+}
+
+// Mostrar la sección de inicio al cargar la página
+document.addEventListener('DOMContentLoaded', function() {
+  showSection('home');
 });
