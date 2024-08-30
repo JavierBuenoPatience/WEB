@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-link, .nav-button {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-button {
+  background-color: #007BFF;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.main {
+  padding: 16px;
+}
+
+.hero {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 48px 16px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-buttons {
+  margin-top: 16px;
+}
+
+.button-primary {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.button-secondary {
+  background-color: #6c757d;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.features {
+  padding: 48px 16px;
+  background-color: #f8f9fa;
+}
+
+.features-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.feature-item {
+  flex: 1;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials {
+  padding: 48px 16px;
+  text-align: center;
+}
+
+.testimonial-item {
+  background-color: #f8f9fa;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 8px;
+}
+
+.contact {
+  padding: 48px 16px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.terms {
+  font-size: 12px;
+  color: #666;
+}
+
+.footer {
+  padding: 16px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-nav {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
