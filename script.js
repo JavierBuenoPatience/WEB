@@ -58,4 +58,20 @@ document.addEventListener('DOMContentLoaded', function() {
     images.forEach(image => {
         observer.observe(image);
     });
+
+    // Funcionalidad de animación para los botones de "Funcionalidades"
+    const featureButtons = document.querySelectorAll('.features .btn');
+    featureButtons.forEach(button => {
+        button.addEventListener('mouseover', function() {
+            button.classList.add('btn-hover');
+        });
+        button.addEventListener('mouseout', function() {
+            button.classList.remove('btn-hover');
+        });
+    });
+
+    // Redireccionar al enlace de inicio de sesión externo
+    loginBtn.addEventListener('click', function() {
+        window.location.href = 'https://javierbuenopatience.github.io/chatgpt-web/#';
+    });
 });
