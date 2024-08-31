@@ -7,25 +7,28 @@
     <link rel="stylesheet" href="styles.css"> <!-- Enlace al CSS -->
 </head>
 <body>
-    <nav class="sidebar">
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#que-es-patience">Qué es Patience</a></li>
-            <li><a href="#referencias">Referencias</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#que-es-patience">Qué es Patience</a></li>
+                <li><a href="#referencias">Referencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="content">
         <section id="inicio" class="inicio-section">
-            <img src="images/primer-logo.png" alt="Patience Logo" class="logo">
             <div class="intro-content">
+                <img src="images/primer-logo.png" alt="Patience Logo" class="logo">
                 <h1>Prepárate para tu oposición con Patience</h1>
                 <p>Apóyate en la primera plataforma 360 centrada en ayudarte a hacerte más llevadero el camino hasta tu plaza!</p>
                 <div class="buttons">
                     <button onclick="window.location.href='form.html'">¡Solicita información!</button>
                     <button onclick="window.location.href='https://javierbuenopatience.github.io/chatgpt-web/#'">Regístrate ahora</button>
                 </div>
+                <img src="images/inicio.png" alt="Imagen de Inicio" class="inicio-image">
             </div>
-            <img src="images/inicio.png" alt="Imagen de Inicio" class="inicio-image">
         </section>
 
         <!-- Sección de Qué es Patience -->
@@ -57,11 +60,13 @@
             <p>Juan Pérez, Oficial de Policía</p>
         </section>
     </div>
+    
     <footer>
         <p>© 2024 Patience. Todos los derechos reservados.</p>
         <a href="#">Política de Privacidad</a>
         <a href="#">Aviso Legal</a>
     </footer>
+    
     <script src="script.js"></script> <!-- Enlace al JS -->
 </body>
 </html>
