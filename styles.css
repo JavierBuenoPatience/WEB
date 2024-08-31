@@ -49,7 +49,9 @@ body {
 }
 
 .nav-links a,
-.login-btn {
+.login-btn,
+.btn.primary,
+.btn.secondary {
     text-decoration: none;
     color: #333;
     font-weight: 500;
@@ -60,10 +62,13 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+    display: inline-block;
 }
 
 .nav-links a:hover,
-.login-btn:hover {
+.login-btn:hover,
+.btn.primary:hover,
+.btn.secondary:hover {
     background-color: #019A92;
 }
 
