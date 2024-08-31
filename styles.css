@@ -1,153 +1,153 @@
-/* Estilos generales */
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
-    background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    top: 0;
-}
-
-.top-nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #ececec;
 }
 
-.top-nav ul {
+.logo {
+    max-width: 150px;
+}
+
+.nav-links {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    gap: 20px;
 }
 
-.top-nav ul li {
-    margin-left: 20px;
+.nav-links li {
+    display: inline;
 }
 
-.top-nav ul li a {
+.nav-links a {
     text-decoration: none;
-    color: #01C0B4;
-    font-size: 18px;
+    color: #333;
     font-weight: bold;
 }
 
-.top-nav ul li a:hover {
-    text-decoration: underline;
+.nav-links a:hover {
+    color: #007BFF;
 }
 
-.content {
-    padding: 80px 20px 20px 20px; /* Aseguramos que el contenido no se esconda detrás del header */
+main {
+    padding: 20px;
 }
 
-.inicio-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
+.content-section {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.intro-content {
-    flex: 1;
-    padding-right: 20px;
+.text-content {
     max-width: 600px;
+    margin: auto;
 }
 
-.logo {
-    display: block;
-    margin: 0 auto 20px auto;
-    max-width: 150px;
+.image-content {
+    text-align: center;
 }
 
 .inicio-image {
-    max-width: 300px;
-    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+h1, h2, h3 {
+    color: #007BFF;
+    text-align: center;
+}
+
+p, ul {
+    color: #555;
+    line-height: 1.6;
 }
 
 .buttons {
-    margin: 20px 0;
-}
-
-.buttons button {
-    background-color: #01C0B4;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.buttons button:hover {
-    background-color: #019A92;
-}
-
-section h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: 60px;
     text-align: center;
+    margin-top: 20px;
 }
 
-section h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 40px;
-}
-
-form {
-    margin: 40px auto;
-    max-width: 400px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-form button {
-    width: 100%;
-    background-color: #01C0B4;
+.btn.primary {
+    background-color: #007BFF;
     color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
 }
 
-form button:hover {
-    background-color: #019A92;
+.btn.secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background-color: #0056b3;
+}
+
+.btn.secondary:hover {
+    background-color: #5a6268;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features li {
+    width: 48%;
+    list-style: none;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 footer {
-    background-color: #ffffff;
-    color: #333;
+    padding: 20px;
+    background-color: #f1f1f1;
     text-align: center;
-    padding: 10px;
-    margin-top: 40px;
 }
 
-footer a {
-    color: #01C0B4;
-    text-decoration: none;
+.footer-links {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
     margin: 0 10px;
 }
 
-footer a:hover {
+.footer-links a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.footer-links a:hover {
     text-decoration: underline;
 }
