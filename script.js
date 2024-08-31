@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeModalBtn = document.querySelector('.close-modal');
 
     loginBtn.addEventListener('click', function() {
-        modal.style.display = 'block';
+        // Redireccionar al enlace de inicio de sesión externo
+        window.location.href = 'https://javierbuenopatience.github.io/chatgpt-web/#';
     });
 
     closeModalBtn.addEventListener('click', function() {
@@ -68,10 +69,5 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('mouseout', function() {
             button.classList.remove('btn-hover');
         });
-    });
-
-    // Redireccionar al enlace de inicio de sesión externo
-    loginBtn.addEventListener('click', function() {
-        window.location.href = 'https://javierbuenopatience.github.io/chatgpt-web/#';
     });
 });
