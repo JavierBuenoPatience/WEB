@@ -9,6 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Redirección al formulario de Typeform al hacer clic en "¡Solicita información!"
+    const solicitaInfoBtn = document.getElementById('solicita-info-btn');
+    solicitaInfoBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'https://qz232a8zljw.typeform.com/to/AHskzuV5';
+    });
+
     // Animación de entrada para las imágenes
     const images = document.querySelectorAll('.inicio-image, .features li img');
     const options = {
