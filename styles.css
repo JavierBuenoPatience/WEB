@@ -1,154 +1,138 @@
+/* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 16px 32px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-    height: 50px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-}
-
-.nav-links a:hover {
+.header-left h1 {
+    font-size: 32px;
     color: #01C0B4;
 }
 
+/* Botón de Iniciar Sesión */
 .login-btn {
     background-color: #01C0B4;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .login-btn:hover {
     background-color: #019A92;
 }
 
-.content-section {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+/* Sección de contacto */
+#contact {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    border-top: 1px solid #ddd;
 }
 
-.inicio-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.main-title {
-    font-size: 3rem;
-    color: #01C0B4;
-}
-
-.inicio-image {
-    max-width: 300px;
-    height: auto;
-    margin-left: 20px;
-}
-
-.buttons {
-    margin-top: 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.btn.primary {
-    background-color: #01C0B4;
-    color: #fff;
-}
-
-.btn.primary:hover {
-    background-color: #019A92;
-}
-
-.btn.secondary {
-    background-color: #333;
-    color: #fff;
-    margin-left: 10px;
-}
-
-.btn.secondary:hover {
-    background-color: #555;
-}
-
-.features {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.features li {
+/* Título y texto */
+#contact h2 {
+    color: #333;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
-footer {
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+#contact p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 40px;
 }
 
-.footer-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* Formulario */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.footer-links a {
+/* Campos del formulario */
+.input-field {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #01C0B4;
+    outline: none;
+}
+
+/* Botón de enviar */
+.submit-btn {
+    background-color: #01C0B4;
     color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #019A92;
+}
+
+/* Enlaces de términos y condiciones */
+#contact a {
+    color: #01C0B4;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
+#contact a:hover {
+    color: #019A92;
 }
 
-/* Animations */
-.inicio-image {
-    animation: fadeIn 2s ease-in-out;
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+footer p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+footer nav a {
+    font-size: 14px;
+    color: #01C0B4;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #019A92;
 }
