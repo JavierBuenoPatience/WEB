@@ -1,9 +1,4 @@
-/* Reseteo básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Estilos generales */
 
 body {
     font-family: Arial, sans-serif;
@@ -79,6 +74,22 @@ h3 {
     display: block;
     margin: 0 auto 20px auto;
     max-width: 150px;
+}
+
+.inicio-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.inicio-image {
+    max-width: 300px;
+    border-radius: 10px;
 }
 
 .buttons {
