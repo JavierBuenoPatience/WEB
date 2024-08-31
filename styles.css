@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #f4f4f4 0%, #e9ecef 100%);
+    background: linear-gradient(to bottom, #f4f4f4, #e9ecef);
     color: #333;
 }
 
@@ -29,8 +29,8 @@ body {
 .logo {
     width: 50px;
     height: auto;
-    margin-right: 40px;
-    margin-left: -90px; /* Further left alignment */
+    margin-right: 70px;
+    margin-left: -90px;
 }
 
 .site-title {
