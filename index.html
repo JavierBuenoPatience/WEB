@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patience - Plataforma para Opositores</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="images/logo1" alt="Patience Logo" class="logo">
+        <button class="login-btn">Iniciar Sesión</button>
+        <img src="images/primer-logo.png" alt="Patience Logo" class="logo">
         <nav>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#que-es-patience">Qué es Patience</a></li>
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
                 <li><a href="#referencias">Referencias</a></li>
             </ul>
         </nav>
@@ -20,52 +22,42 @@
 
     <main>
         <section id="inicio" class="content-section">
+            <div class="inicio-content">
+                <h1 class="main-title">Patience</h1>
+                <img src="images/inicio1.png" alt="Imagen Inicio" class="inicio-image">
+            </div>
             <div class="text-content">
-                <h1>Prepárate para tu oposición con Patience</h1>
+                <h2>Prepárate para tu oposición con Patience</h2>
                 <p>Apóyate en la primera plataforma 360 centrada en ayudarte a hacerte más llevadero el camino hasta tu plaza!</p>
                 <div class="buttons">
                     <a href="#formulario" class="btn primary">¡Solicita información!</a>
                     <a href="https://javierbuenopatience.github.io/chatgpt-web/#" class="btn secondary">Regístrate ahora</a>
                 </div>
             </div>
-            <div class="image-content">
-                <img src="images/inicio1" alt="Imagen Inicio" class="inicio-image">
-            </div>
         </section>
 
-        <section id="formulario" class="content-section">
-            <h2>Solicita más información o inscríbete en Patience</h2>
-            <form>
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <textarea placeholder="Mensaje" rows="4" required></textarea>
-                <button type="submit" class="btn primary">Enviar</button>
-            </form>
-            <p class="terms">Al enviar este formulario, aceptas nuestros <a href="#">Términos y Condiciones</a>.</p>
-        </section>
-
-        <section id="que-es-patience" class="content-section">
-            <h2>Qué es Patience</h2>
+        <section id="funcionalidades" class="content-section">
+            <h2>Funcionalidades</h2>
             <p>Cada apoyo cuenta, ¡únete!</p>
             <p>Nuestro servicio SaaS te brinda herramientas y recursos exclusivos para que puedas preparar tu oposición de manera eficiente y efectiva.</p>
             <ul class="features">
                 <li>
-                    <h3>Grupos de Estudio</h3>
+                    <h3>📚 Grupos de Estudio</h3>
                     <p>Únete a grupos de estudio para aprender de manera colaborativa y compartir conocimientos con otros opositores.</p>
                     <a href="#" class="btn secondary">Más información</a>
                 </li>
                 <li>
-                    <h3>IA experta en tu especialidad</h3>
+                    <h3>🤖 IA experta en tu especialidad</h3>
                     <p>Accede a contenidos y recursos generados por una inteligencia artificial especializada en tu área de oposición.</p>
                     <a href="#" class="btn secondary">Más información</a>
                 </li>
                 <li>
-                    <h3>Últimas noticias</h3>
+                    <h3>📰 Últimas noticias</h3>
                     <p>Mantente informado sobre las últimas novedades de tu proceso de oposición.</p>
                     <a href="#" class="btn secondary">Más información</a>
                 </li>
                 <li>
-                    <h3>Comunicación con tu academia</h3>
+                    <h3>💬 Comunicación con tu academia</h3>
                     <p>Comunícate en tiempo real con tu tutor, accede a clases grabadas, temario actualizado y mucho más.</p>
                     <a href="#" class="btn secondary">Próximamente...</a>
                 </li>
@@ -82,6 +74,17 @@
                 <p>“El apoyo personalizado de los tutores de Patience fue clave para superar mis dudas y sentirme más seguro durante el proceso de oposición. ¡Recomiendo este servicio a todos los opositores!”</p>
                 <cite>— Juan Pérez, Oficial de Policía</cite>
             </blockquote>
+        </section>
+
+        <section id="formulario" class="content-section">
+            <h2>Solicita más información o inscríbete en Patience</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="Mensaje" rows="4" required></textarea>
+                <button type="submit" class="btn primary">Enviar</button>
+            </form>
+            <p class="terms">Al enviar este formulario, aceptas nuestros <a href="#">Términos y Condiciones</a>.</p>
         </section>
     </main>
 
