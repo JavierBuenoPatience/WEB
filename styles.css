@@ -30,7 +30,7 @@ body {
     width: 50px;
     height: auto;
     margin-right: 10px;
-    margin-left: -20px; /* Adjusted for left alignment */
+    margin-left: -30px; /* Further left alignment */
 }
 
 .site-title {
@@ -41,6 +41,7 @@ body {
 .nav-links {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .nav-links li {
