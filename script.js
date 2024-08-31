@@ -1,14 +1,14 @@
-function showSection(sectionId) {
-  // Ocultar todas las secciones
-  document.querySelectorAll('section').forEach(section => {
-    section.style.display = 'none';
-  });
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('header nav a');
 
-  // Mostrar la sección seleccionada
-  document.getElementById(sectionId).style.display = 'block';
-}
-
-// Mostrar la sección de inicio al cargar la página
-document.addEventListener('DOMContentLoaded', function() {
-  showSection('home');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetSection = document.querySelector(this.getAttribute('href'));
+            window.scrollTo({
+                top: targetSection.offsetTop - 50,
+                behavior: 'smooth'
+            });
+        });
+    });
 });
