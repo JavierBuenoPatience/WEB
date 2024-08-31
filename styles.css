@@ -80,6 +80,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row-reverse;
 }
 
 .hero-section h2 {
@@ -127,8 +128,8 @@ body {
     flex: 1;
     min-width: 45%;
     margin-bottom: 40px;
-    background-color: #f8f8f8;
     padding: 20px;
+    background-color: #f9f9f9;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -218,6 +219,7 @@ body {
     margin-top: 20px;
     font-size: 14px;
     color: #777;
+    text-align: center;
 }
 
 .terms a {
@@ -241,6 +243,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-top: 10px;
 }
 
 .footer-links a {
