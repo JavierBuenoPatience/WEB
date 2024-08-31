@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Validación básica del formulario
-    const form = document.querySelector('form');
+    const form = document.querySelector('.contact-form');
     form.addEventListener('submit', function(e) {
         const name = form.querySelector('input[type="text"]').value;
         const email = form.querySelector('input[type="email"]').value;
@@ -65,3 +65,4 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'https://javierbuenopatience.github.io/chatgpt-web/#';
     });
 });
+
