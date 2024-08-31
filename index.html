@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patience</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace al CSS -->
+    <title>Patience - Plataforma para Opositores</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav class="top-nav">
-            <ul>
+        <img src="images/primer-logo.png" alt="Patience Logo" class="logo">
+        <nav>
+            <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#que-es-patience">Qué es Patience</a></li>
                 <li><a href="#referencias">Referencias</a></li>
@@ -17,56 +18,83 @@
         </nav>
     </header>
 
-    <div class="content">
-        <section id="inicio" class="inicio-section">
-            <div class="intro-content">
-                <img src="images/primer-logo.png" alt="Patience Logo" class="logo">
+    <main>
+        <section id="inicio" class="content-section">
+            <div class="text-content">
                 <h1>Prepárate para tu oposición con Patience</h1>
                 <p>Apóyate en la primera plataforma 360 centrada en ayudarte a hacerte más llevadero el camino hasta tu plaza!</p>
                 <div class="buttons">
-                    <button onclick="window.location.href='form.html'">¡Solicita información!</button>
-                    <button onclick="window.location.href='https://javierbuenopatience.github.io/chatgpt-web/#'">Regístrate ahora</button>
+                    <a href="#formulario" class="btn primary">¡Solicita información!</a>
+                    <a href="https://javierbuenopatience.github.io/chatgpt-web/#" class="btn secondary">Regístrate ahora</a>
                 </div>
-                <img src="images/inicio.png" alt="Imagen de Inicio" class="inicio-image">
+            </div>
+            <div class="image-content">
+                <img src="images/inicio.png" alt="Imagen Inicio" class="inicio-image">
             </div>
         </section>
 
-        <!-- Sección de Qué es Patience -->
-        <section id="que-es-patience">
+        <section id="formulario" class="content-section">
+            <h2>Solicita más información o inscríbete en Patience</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="Mensaje" rows="4" required></textarea>
+                <button type="submit" class="btn primary">Enviar</button>
+            </form>
+            <p class="terms">Al enviar este formulario, aceptas nuestros <a href="#">Términos y Condiciones</a>.</p>
+        </section>
+
+        <section id="que-es-patience" class="content-section">
             <h2>Qué es Patience</h2>
             <p>Cada apoyo cuenta, ¡únete!</p>
             <p>Nuestro servicio SaaS te brinda herramientas y recursos exclusivos para que puedas preparar tu oposición de manera eficiente y efectiva.</p>
-            <h3>Grupos de Estudio</h3>
-            <p>Únete a grupos de estudio para aprender de manera colaborativa y compartir conocimientos con otros opositores.</p>
-            <button>Más información</button>
-            <h3>IA experta en tu especialidad</h3>
-            <p>Accede a contenidos y recursos generados por una inteligencia artificial especializada en tu área de oposición.</p>
-            <button>Más información</button>
-            <h3>Últimas noticias</h3>
-            <p>Mantente informado sobre las últimas novedades de tu proceso de oposición.</p>
-            <button>Más información</button>
-            <h3>Comunicación con tu academia</h3>
-            <p>Comunícate en tiempo real con tu tutor, accede a clases grabadas, temario actualizado y mucho más.</p>
-            <button>Próximamente...</button>
+            <ul class="features">
+                <li>
+                    <h3>Grupos de Estudio</h3>
+                    <p>Únete a grupos de estudio para aprender de manera colaborativa y compartir conocimientos con otros opositores.</p>
+                    <a href="#" class="btn secondary">Más información</a>
+                </li>
+                <li>
+                    <h3>IA experta en tu especialidad</h3>
+                    <p>Accede a contenidos y recursos generados por una inteligencia artificial especializada en tu área de oposición.</p>
+                    <a href="#" class="btn secondary">Más información</a>
+                </li>
+                <li>
+                    <h3>Últimas noticias</h3>
+                    <p>Mantente informado sobre las últimas novedades de tu proceso de oposición.</p>
+                    <a href="#" class="btn secondary">Más información</a>
+                </li>
+                <li>
+                    <h3>Comunicación con tu academia</h3>
+                    <p>Comunícate en tiempo real con tu tutor, accede a clases grabadas, temario actualizado y mucho más.</p>
+                    <a href="#" class="btn secondary">Próximamente...</a>
+                </li>
+            </ul>
         </section>
 
-        <!-- Sección de Referencias -->
-        <section id="referencias">
+        <section id="referencias" class="content-section">
             <h2>Referencias</h2>
-            <h3>Testimonios de usuarios satisfechos con Patience</h3>
-            <blockquote>“Gracias a la planificación y los recursos de Patience, pude organizar mi tiempo de estudio de manera eficiente y enfocarme en lo más importante. ¡Conseguí mi plaza!”</blockquote>
-            <p>María Gómez, Maestra de Primaria</p>
-            <blockquote>“El apoyo personalizado de los tutores de Patience fue clave para superar mis dudas y sentirme más seguro durante el proceso de oposición. ¡Recomiendo este servicio a todos los opositores!”</blockquote>
-            <p>Juan Pérez, Oficial de Policía</p>
+            <blockquote>
+                <p>“Gracias a la planificación y los recursos de Patience, pude organizar mi tiempo de estudio de manera eficiente y enfocarme en lo más importante. ¡Conseguí mi plaza!”</p>
+                <cite>— María Gómez, Maestra de Primaria</cite>
+            </blockquote>
+            <blockquote>
+                <p>“El apoyo personalizado de los tutores de Patience fue clave para superar mis dudas y sentirme más seguro durante el proceso de oposición. ¡Recomiendo este servicio a todos los opositores!”</p>
+                <cite>— Juan Pérez, Oficial de Policía</cite>
+            </blockquote>
         </section>
-    </div>
-    
+    </main>
+
     <footer>
-        <p>© 2024 Patience. Todos los derechos reservados.</p>
-        <a href="#">Política de Privacidad</a>
-        <a href="#">Aviso Legal</a>
+        <p>&copy; 2024 Patience. Todos los derechos reservados.</p>
+        <nav>
+            <ul class="footer-links">
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Aviso Legal</a></li>
+            </ul>
+        </nav>
     </footer>
-    
-    <script src="script.js"></script> <!-- Enlace al JS -->
+
+    <script src="script.js"></script>
 </body>
 </html>
