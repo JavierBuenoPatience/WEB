@@ -30,6 +30,7 @@ body {
     width: 50px;
     height: auto;
     margin-right: 10px;
+    margin-left: -20px; /* Adjusted for left alignment */
 }
 
 .site-title {
@@ -65,6 +66,11 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #019A92;
 }
 
 .hero-section {
@@ -98,11 +104,12 @@ body {
     width: 45%;
     height: auto;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .inicio-image:hover {
     transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .content-section {
