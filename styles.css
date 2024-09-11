@@ -95,6 +95,15 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    justify-content: space-between;
+}
+
+.feature-left .feature-content {
+    flex-direction: row;
+}
+
+.feature-right .feature-content {
+    flex-direction: row-reverse;
 }
 
 .feature-text {
