@@ -30,7 +30,6 @@ body {
     width: 50px;
     height: auto;
     margin-right: 70px;
-    margin-left: -90px;
 }
 
 .site-title {
@@ -81,82 +80,49 @@ body {
     flex-wrap: wrap;
 }
 
-.hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-}
-
-.hero-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.hero-section p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.inicio-image {
-    width: 45%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.inicio-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
-
 .content-section {
     padding: 60px 0;
     background-color: #ffffff;
 }
 
-.section-intro {
-    font-size: 18px;
-    margin-bottom: 40px;
-    color: #555;
+/* Estilos para las funcionalidades */
+.feature {
     text-align: center;
+    margin-bottom: 60px;
 }
 
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+.feature-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
 }
 
-.features li {
-    flex: 1;
-    min-width: 45%;
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.features li:hover {
-    transform: translateY(-5px);
-}
-
-.features h3 {
-    font-size: 22px;
+h3 {
+    font-size: 24px;
     margin-bottom: 15px;
     color: #01C0B4;
 }
 
-.features p {
+p {
     font-size: 16px;
     margin-bottom: 20px;
     color: #666;
 }
 
-.features .btn {
+/* Eliminar puntos negros en listas */
+ul.features {
+    list-style: none;
+    padding: 0;
+}
+
+ul.features li {
+    list-style: none;
+}
+
+/* Botones */
+.btn {
     background-color: #01C0B4;
     color: white;
     padding: 10px 20px;
@@ -167,74 +133,8 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.features .btn:hover {
+.btn:hover {
     background-color: #019A92;
-}
-
-.testimonial {
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.testimonial blockquote {
-    font-size: 18px;
-    color: #555;
-    margin: 0;
-}
-
-.testimonial cite {
-    display: block;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-.contact-form button {
-    background-color: #01C0B4;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #019A92;
-}
-
-.terms {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #777;
-    text-align: center;
-}
-
-.terms a {
-    color: #01C0B4;
-    text-decoration: none;
-}
-
-.terms a:hover {
-    text-decoration: underline;
 }
 
 footer {
