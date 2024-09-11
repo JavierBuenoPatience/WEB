@@ -95,6 +95,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .feature-text {
@@ -102,8 +103,8 @@ body {
 }
 
 .feature-image {
-    width: 250px;
-    height: 150px;
+    width: 150px;
+    height: auto;
     border-radius: 10px;
 }
 
