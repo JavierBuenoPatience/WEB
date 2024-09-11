@@ -1,3 +1,4 @@
+/* Ajustes generales */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -85,43 +86,39 @@ body {
     background-color: #ffffff;
 }
 
-/* Estilos para las funcionalidades */
+/* Diseño de la sección de funcionalidades */
 .feature {
-    text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+}
+
+.feature-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.feature-text {
+    flex: 1;
 }
 
 .feature-image {
-    width: 100%;
-    max-width: 400px;
+    width: 150px;
     height: auto;
-    border-radius: 15px;
-    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 h3 {
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #01C0B4;
 }
 
 p {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #666;
 }
 
-/* Eliminar puntos negros en listas */
-ul.features {
-    list-style: none;
-    padding: 0;
-}
-
-ul.features li {
-    list-style: none;
-}
-
-/* Botones */
 .btn {
     background-color: #01C0B4;
     color: white;
@@ -135,6 +132,16 @@ ul.features li {
 
 .btn:hover {
     background-color: #019A92;
+}
+
+/* Eliminar puntos negros en listas */
+ul.features {
+    list-style: none;
+    padding: 0;
+}
+
+ul.features li {
+    list-style: none;
 }
 
 footer {
