@@ -39,3 +39,18 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'https://javierbuenopatience.github.io/chatgpt-web/#';
     });
 });
+
+// Función para abrir el modal de imagen
+function openModal(imageSrc) {
+    var modal = document.getElementById("imageModal");
+    var modalImage = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImage.src = imageSrc;
+}
+
+// Función para cerrar el modal de imagen
+function closeModal() {
+    var modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+}
+
