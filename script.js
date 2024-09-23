@@ -1,8 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Menú móvil toggle
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+
     // Scroll suave al hacer clic en los enlaces del menú
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
+            navLinks.classList.remove('active');
+            menuToggle.classList.remove('active');
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
             });
@@ -16,41 +27,48 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'https://qz232a8zljw.typeform.com/to/AHskzuV5';
     });
 
-    // Animación de entrada para las imágenes
-    const images = document.querySelectorAll('.inicio-image, .features li img');
-    const options = {
-        threshold: 0.1
-    };
-    const observer = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add('fade-in');
-            observer.unobserve(entry.target);
-        });
-    }, options);
-
-    images.forEach(image => {
-        observer.observe(image);
-    });
-
     // Redirección al enlace de inicio de sesión
     const loginRedirectBtn = document.querySelector('.login-btn');
     loginRedirectBtn.addEventListener('click', function() {
         window.location.href = 'https://javierbuenopatience.github.io/chatgpt-web/#';
     });
+
+    // Funcionalidad del modal de imagen
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    const images = document.querySelectorAll('.feature-image');
+
+    images.forEach(image => {
+        image.addEventListener('click', function() {
+            modal.style.display = "block";
+            modalImage.src = this.src;
+        });
+    });
+
+    // Cerrar el modal al hacer clic fuera de la imagen
+    modal.addEventListener('click', function() {
+        modal.style.display = "none";
+    });
+
+    // Carrusel de testimonios
+    let testimonialIndex = 0;
+    const testimonials = document.querySelectorAll('.testimonial-carousel .testimonial');
+    const totalTestimonials = testimonials.length;
+
+    function showTestimonial(index) {
+        testimonials.forEach((testimonial, i) => {
+            testimonial.style.display = i === index ? 'block' : 'none';
+        });
+    }
+
+    function nextTestimonial() {
+        testimonialIndex = (testimonialIndex + 1) % totalTestimonials;
+        showTestimonial(testimonialIndex);
+    }
+
+    // Mostrar el primer testimonio inicialmente
+    showTestimonial(testimonialIndex);
+
+    // Cambiar testimonios cada 5 segundos
+    setInterval(nextTestimonial, 5000);
 });
-
-// Función para abrir el modal de imagen
-function openModal(imageSrc) {
-    var modal = document.getElementById("imageModal");
-    var modalImage = document.getElementById("modalImage");
-    modal.style.display = "block";
-    modalImage.src = imageSrc;
-}
-
-// Función para cerrar el modal de imagen
-function closeModal() {
-    var modal = document.getElementById("imageModal");
-    modal.style.display = "none";
-}
-
