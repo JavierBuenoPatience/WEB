@@ -325,9 +325,9 @@ p {
 }
 
 .blog-post img {
-    width: 50%;
+    width: 30%;
     height: auto;
-    max-height: 200px; /* Limita la altura máxima si es necesario */
+    max-height: 100px; /* Limita la altura máxima si es necesario */
     border-radius: 10px;
 }
 
