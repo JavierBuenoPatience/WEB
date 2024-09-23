@@ -45,8 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Cerrar el modal al hacer clic fuera de la imagen
-    modal.addEventListener('click', function() {
+    // Cerrar el modal al hacer clic en la "x"
+    const closeModalBtn = document.querySelector('.modal .close');
+    closeModalBtn.addEventListener('click', function() {
         modal.style.display = "none";
     });
 
