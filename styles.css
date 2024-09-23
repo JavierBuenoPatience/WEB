@@ -318,7 +318,7 @@ p {
 }
 
 .blog-post {
-    flex: 1 1 calc(33.333% - 20px);
+    flex: 1 1 calc(50% - 20px);
     background-color: #f0f7f6;
     padding: 20px;
     border-radius: 5px;
@@ -344,6 +344,46 @@ p {
     .blog-post {
         flex: 1 1 100%;
     }
+}
+
+/* Estilos para la sección del artículo */
+.article-section {
+    padding: 60px 0;
+}
+
+.article-meta {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.article-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.article-content h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    color: #01C0B4;
+}
+
+.article-content p {
+    margin-bottom: 20px;
+}
+
+.article-content a {
+    color: #01C0B4;
+    text-decoration: none;
+}
+
+.article-content a:hover {
+    text-decoration: underline;
+}
+
+.article-section .btn.primary {
+    margin-top: 30px;
 }
 
 /* Carrusel de testimonios */
