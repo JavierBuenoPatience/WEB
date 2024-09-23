@@ -2,23 +2,37 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- Meta etiquetas para SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Patience es una plataforma 360 centrada en ayudar a los opositores a hacer más llevadero el camino hasta su plaza. Únete a grupos de estudio, utiliza nuestra IA especializada y mantente al día con las últimas noticias.">
+    <meta name="keywords" content="oposiciones, plataforma, grupos de estudio, inteligencia artificial, noticias, academia, comunicación">
     <title>Patience - Plataforma para Opositores</title>
+    <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Fuente de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Encabezado con menú de navegación responsivo -->
     <header class="header">
         <div class="container">
             <div class="logo-container">
                 <img src="Images/primer logo.png" alt="Patience Logo" class="logo">
                 <h1 class="site-title">Patience</h1>
             </div>
-            <nav>
+            <nav class="nav">
+                <!-- Icono de menú para móviles -->
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
                 <ul class="nav-links">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#funcionalidades">Funcionalidades</a></li>
                     <li><a href="#referencias">Referencias</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#formulario">Contacto</a></li>
                     <li><button class="login-btn">Iniciar Sesión</button></li>
                 </ul>
@@ -27,33 +41,37 @@
     </header>
 
     <main>
+        <!-- Sección de inicio -->
         <section id="inicio" class="content-section hero-section">
             <div class="container hero-content">
                 <div class="text-content">
                     <h2>Prepárate para tu oposición con Patience</h2>
-                    <p>Apóyate en la primera plataforma 360 centrada en ayudarte a hacerte más llevadero el camino hasta tu plaza!</p>
+                    <p>¡Apóyate en la primera plataforma 360 centrada en ayudarte a hacer más llevadero el camino hasta tu plaza!</p>
                     <div class="buttons">
                         <a href="#" class="btn primary" id="solicita-info-btn">¡Solicita información!</a>
-                </div>
+                    </div>
 
-                <!-- Video debajo del texto -->
-                <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 15px; margin-top: 20px; overflow: hidden; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
-                    <iframe src="https://share.synthesia.io/embeds/videos/4c43a995-7419-47dd-ad2e-acc2f84ea689" title="Synthesia video player" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; border-radius: 15px;"></iframe>
+                    <!-- Video introductorio -->
+                    <div class="video-container">
+                        <iframe src="https://share.synthesia.io/embeds/videos/4c43a995-7419-47dd-ad2e-acc2f84ea689" title="Video de presentación" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Sección de funcionalidades -->
         <section id="funcionalidades" class="content-section">
             <div class="container">
                 <h2>Funcionalidades</h2>
 
+                <!-- Funcionalidades detalladas -->
                 <!-- Grupos de Estudio -->
                 <div class="feature feature-left">
                     <div class="feature-content">
-                        <img src="Images/Mis%20grupos.png" alt="Grupos de Estudio" class="feature-image" onclick="openModal('Images/Mis%20grupos.png')">
+                        <img src="Images/Mis%20grupos.png" alt="Grupos de Estudio" class="feature-image">
                         <div class="feature-text">
                             <h3>📚 Grupos de Estudio</h3>
-                            <p>Únete a grupos de estudio para conectar con otros opositores en tu misma situación. ¡Se acabó pasar un proceso de oposición sol@!.</p>
+                            <p>Únete a grupos de estudio para conectar con otros opositores en tu misma situación. ¡Se acabó pasar un proceso de oposición solo!</p>
                             <a href="#" class="btn secondary">Más información</a>
                         </div>
                     </div>
@@ -62,10 +80,10 @@
                 <!-- IA experta en tu especialidad -->
                 <div class="feature feature-right">
                     <div class="feature-content">
-                        <img src="Images/IA%20especialidad.png" alt="IA experta en tu especialidad" class="feature-image" onclick="openModal('Images/IA%20especialidad.png')">
+                        <img src="Images/IA%20especialidad.png" alt="IA experta en tu especialidad" class="feature-image">
                         <div class="feature-text">
                             <h3>🤖 IA experta en tu especialidad</h3>
-                            <p>Aprovecha una IA experta en tu especialidad de oposición y al corriente de todas las novedades para corregir ejercicios prácticos, generar más, desarrollar temario nuevo o pedirle sugerencias de mejora!</p>
+                            <p>Aprovecha una IA experta en tu especialidad de oposición y al corriente de todas las novedades para corregir ejercicios prácticos, generar más, desarrollar temario nuevo o pedirle sugerencias de mejora.</p>
                             <a href="#" class="btn secondary">Más información</a>
                         </div>
                     </div>
@@ -74,7 +92,7 @@
                 <!-- Últimas Noticias -->
                 <div class="feature feature-left">
                     <div class="feature-content">
-                        <img src="Images/Últimas%20noticias.png" alt="Últimas noticias" class="feature-image" onclick="openModal('Images/Últimas%20noticias.png')">
+                        <img src="Images/Últimas%20noticias.png" alt="Últimas noticias" class="feature-image">
                         <div class="feature-text">
                             <h3>📰 Últimas noticias</h3>
                             <p>Está al corriente de las últimas novedades de tu proceso de oposición.</p>
@@ -86,7 +104,7 @@
                 <!-- Comunicación con tu academia -->
                 <div class="feature feature-right">
                     <div class="feature-content">
-                        <img src="Images/Comuncación%20academia.png" alt="Comunicación con tu academia" class="feature-image" onclick="openModal('Images/Comuncación%20academia.png')">
+                        <img src="Images/Comuncación%20academia.png" alt="Comunicación con tu academia" class="feature-image">
                         <div class="feature-text">
                             <h3>💬 Comunicación con tu academia</h3>
                             <p>Comunícate en tiempo real con tu tutor, accede a clases grabadas, temario actualizado y mucho más.</p>
@@ -97,7 +115,47 @@
             </div>
         </section>
 
-        <!-- NUEVO APARTADO DE CONTACTO -->
+        <!-- Sección de Preguntas Frecuentes -->
+        <section id="faq" class="content-section">
+            <div class="container">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3>¿Qué es Patience?</h3>
+                        <p>Patience es una plataforma 360 diseñada para apoyar a opositores en su camino hacia conseguir una plaza. Ofrecemos funcionalidades como grupos de estudio, IA especializada y noticias actualizadas.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Cómo puedo unirme a un grupo de estudio?</h3>
+                        <p>Puedes unirte a un grupo de estudio registrándote en nuestra plataforma y navegando a la sección de grupos de estudio donde encontrarás grupos disponibles según tu especialidad.</p>
+                    </div>
+                    <!-- Añade más preguntas frecuentes según sea necesario -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Blog -->
+        <section id="blog" class="content-section">
+            <div class="container">
+                <h2>Blog</h2>
+                <div class="blog-container">
+                    <article class="blog-post">
+                        <img src="Images/blog1.jpg" alt="Consejos para estudiar eficientemente">
+                        <h3>Consejos para estudiar eficientemente</h3>
+                        <p>Descubre técnicas y métodos para optimizar tu tiempo de estudio y mejorar tu retención de información.</p>
+                        <a href="#" class="btn secondary">Leer más</a>
+                    </article>
+                    <article class="blog-post">
+                        <img src="Images/blog2.jpg" alt="Cómo manejar el estrés durante la oposición">
+                        <h3>Cómo manejar el estrés durante la oposición</h3>
+                        <p>Aprende estrategias para gestionar el estrés y mantener un equilibrio saludable durante tu preparación.</p>
+                        <a href="#" class="btn secondary">Leer más</a>
+                    </article>
+                    <!-- Añade más artículos de blog según sea necesario -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Solicitud de Información -->
         <section id="formulario" class="content-section">
             <div class="container">
                 <h2>Solicita más información</h2>
@@ -114,31 +172,36 @@
             </div>
         </section>
 
+        <!-- Sección de Referencias con carrusel -->
         <section id="referencias" class="content-section">
             <div class="container">
                 <h2>Referencias</h2>
-                <div class="testimonial">
-                    <blockquote>
-                        <p>"Con Patience es todo mucho más sencillo. La IA me ayuda a generar introducciones y conclusiones con información actualizada para poder luego ir adaptándolas a mi estilo, pero no invierto tiempo en buscar información desde 0. Además, con los grupos puedo hablar con otras opositoras y opositores que están igual que yo y la verdad que nos hacemos mucha compañía. Lo recomiendo! Es un gran apoyo”</p>
-                        <cite>— Miriam Sánchez, opositora para secundaria en la especialidad de francés</cite>
-                    </blockquote>
-                </div>
-                <div class="testimonial">
-                    <blockquote>
-                        <p>“Sentirte completamente solo durante 12 horas al día en un cuarto es una sensación horrible y con Patience la verdad que se me ha hecho mucho más llevadero. Con los grupos al final conoces gente en tu misma situación y acabas haciendo grupos de estudio donde ya no eres tú solo contra la oposción porque compartís información relevante del proceso y después de estudiar quedamos para tomar una cerveza. Una herramienta de apoyo fantástica!”</p>
-                        <cite>— Carlos Bueno, opositor para secundaria en la especialidad de biología y geología</cite>
-                    </blockquote>
+                <div class="testimonial-carousel">
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>"Con Patience es todo mucho más sencillo. La IA me ayuda a generar introducciones y conclusiones con información actualizada para poder luego ir adaptándolas a mi estilo. Además, con los grupos puedo hablar con otras opositoras y opositores que están igual que yo. ¡Lo recomiendo! Es un gran apoyo."</p>
+                            <cite>— Miriam Sánchez, opositora para secundaria en la especialidad de francés</cite>
+                        </blockquote>
+                    </div>
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>"Sentirte completamente solo durante 12 horas al día en un cuarto es una sensación horrible, y con Patience la verdad que se me ha hecho mucho más llevadero. Con los grupos al final conoces gente en tu misma situación y acabas haciendo grupos de estudio donde ya no eres tú solo contra la oposición. ¡Una herramienta de apoyo fantástica!"</p>
+                            <cite>— Carlos Bueno, opositor para secundaria en la especialidad de biología y geología</cite>
+                        </blockquote>
+                    </div>
+                    <!-- Añade más testimonios según sea necesario -->
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Modal para agrandar imágenes -->
-    <div id="imageModal" class="modal" onclick="closeModal()">
+    <!-- Modal para imágenes ampliadas -->
+    <div id="imageModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="modalImage">
     </div>
 
+    <!-- Pie de página con enlaces adicionales -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Patience. Todos los derechos reservados.</p>
@@ -146,11 +209,19 @@
                 <ul class="footer-links">
                     <li><a href="#">Política de Privacidad</a></li>
                     <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
                 </ul>
             </nav>
+            <div class="social-media">
+                <a href="#"><img src="Images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="Images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="Images/instagram-icon.png" alt="Instagram"></a>
+                <!-- Añade más enlaces a redes sociales si es necesario -->
+            </div>
         </div>
     </footer>
 
+    <!-- Enlace al archivo JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
